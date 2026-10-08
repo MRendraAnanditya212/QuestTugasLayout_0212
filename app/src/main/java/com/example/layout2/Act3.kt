@@ -107,6 +107,7 @@ fun Act3Layout(modifier: Modifier = Modifier) {
             .padding(vertical = 12.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        // --- HEADER ---
         Column(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
@@ -126,37 +127,40 @@ fun Act3Layout(modifier: Modifier = Modifier) {
         }
 
         Spacer(modifier = Modifier.height(16.dp))
-    }
 
-    Column {
-        UserCardWidget(
-            bgColorRes = R.color.card_0_bg,
-            namaRes = R.string.nama_1,
-            alamatRes = R.string.alamat_1,
-            isCursiveFont = true,
-            alamatColorRes = R.color.text_yellow
-        )
-        UserCardWidget(
-            bgColorRes = R.color.card_1_bg,
-            namaRes = R.string.nama_2,
-            noTelpRes = R.string.telp_2,
-            alamatRes = R.string.alamat_2,
-            alamatColorRes = R.color.text_yellow
-        )
-        UserCardWidget(
-            bgColorRes = R.color.card_2_bg,
-            namaRes = R.string.nama_3,
-            noTelpRes = R.string.telp_3,
-            alamatRes = R.string.alamat_3
-        )
-        UserCardWidget(
-            bgColorRes = R.color.card_3_bg,
-            namaRes = R.string.nama_4,
-            noTelpRes = R.string.telp_4,
-            alamatRes = R.string.alamat_4
-        )
+        // --- DAFTAR 4 KARTU ---
+        Column {
+            UserCardWidget(
+                bgColorRes = R.color.card_0_bg,
+                namaRes = R.string.nama_1,
+                alamatRes = R.string.alamat_1,
+                isCursiveFont = true,
+                alamatColorRes = R.color.text_yellow
+            )
+            UserCardWidget(
+                bgColorRes = R.color.card_1_bg,
+                namaRes = R.string.nama_2,
+                noTelpRes = R.string.telp_2,
+                alamatRes = R.string.alamat_2,
+                alamatColorRes = R.color.text_yellow
+            )
+            UserCardWidget(
+                bgColorRes = R.color.card_2_bg,
+                namaRes = R.string.nama_3,
+                noTelpRes = R.string.telp_3,
+                alamatRes = R.string.alamat_3
+            )
+            UserCardWidget(
+                bgColorRes = R.color.card_3_bg,
+                namaRes = R.string.nama_4,
+                noTelpRes = R.string.telp_4,
+                alamatRes = R.string.alamat_4
+            )
+        }
+
         Spacer(modifier = Modifier.weight(1f))
 
+        // --- FOOTER ---
         Text(
             text = stringResource(id = R.string.copy),
             fontSize = 12.sp,
