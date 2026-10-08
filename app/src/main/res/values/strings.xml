@@ -2,4 +2,6 @@
     <string name="app_name">layout2</string>
     <string name="prodi">Teknologi Informasi</string>
     <string name="univ">Universitas Muhammadiyah Yogyakarta</string>
+    <string name="copy">Copyright, 2026</string>
+    <string name="logo_desc">Logo UMY</string>
 </resources>
