@@ -143,5 +143,17 @@ fun Act3Layout(modifier: Modifier = Modifier) {
             alamatRes = R.string.alamat_2,
             alamatColorRes = R.color.text_yellow
         )
+        UserCardWidget(
+            bgColorRes = R.color.card_2_bg,
+            namaRes = R.string.nama_3,
+            noTelpRes = R.string.telp_3,
+            alamatRes = R.string.alamat_3
+        )
+        UserCardWidget(
+            bgColorRes = R.color.card_3_bg,
+            namaRes = R.string.nama_4,
+            noTelpRes = R.string.telp_4,
+            alamatRes = R.string.alamat_4
+        )
     }
 }
