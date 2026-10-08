@@ -24,3 +24,27 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
+@Composable
+fun UserCardWidget(
+    bgColorRes: Int,
+    namaRes: Int,
+    alamatRes: Int,
+    noTelpRes: Int? = null,
+    isCursiveFont: Boolean = false,
+    namaColorRes: Int = R.color.white,
+    telpColorRes: Int = R.color.text_cyan,
+    alamatColorRes: Int = R.color.white
+) {
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp, vertical = 6.dp),
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = colorResource(id = bgColorRes)
+        )
+    ) {
+
+    }
+}
