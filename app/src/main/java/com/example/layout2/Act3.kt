@@ -155,5 +155,12 @@ fun Act3Layout(modifier: Modifier = Modifier) {
             noTelpRes = R.string.telp_4,
             alamatRes = R.string.alamat_4
         )
+        Spacer(modifier = Modifier.weight(1f))
+
+        Text(
+            text = stringResource(id = R.string.copy),
+            fontSize = 12.sp,
+            color = colorResource(id = R.color.black)
+        )
     }
 }
