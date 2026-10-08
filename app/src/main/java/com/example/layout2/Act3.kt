@@ -107,6 +107,24 @@ fun Act3Layout(modifier: Modifier = Modifier) {
             .padding(vertical = 12.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(
+                text = stringResource(id = R.string.prodi),
+                fontSize = 28.sp,
+                fontWeight = FontWeight.Bold,
+                color = colorResource(id = R.color.black)
+            )
+            Spacer(modifier = Modifier.height(4.dp))
+            Text(
+                text = stringResource(id = R.string.univ),
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Bold,
+                color = colorResource(id = R.color.black)
+            )
+        }
 
+        Spacer(modifier = Modifier.height(16.dp))
     }
 }
