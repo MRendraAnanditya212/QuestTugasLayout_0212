@@ -45,6 +45,56 @@ fun UserCardWidget(
             containerColor = colorResource(id = bgColorRes)
         )
     ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.logo_umy),
+                contentDescription = stringResource(id = R.string.logo_desc),
+                modifier = Modifier.size(65.dp)
+            )
 
+            Column(
+                modifier = Modifier.weight(1f),
+                horizontalAlignment = Alignment.Start
+            ) {
+                Text(
+                    text = stringResource(id = namaRes),
+                    fontSize = 20.sp,
+                    fontWeight = if (isCursiveFont) FontWeight.Normal else FontWeight.Bold,
+                    fontFamily = if (isCursiveFont) FontFamily.Cursive else FontFamily.Default,
+                    color = colorResource(id = namaColorRes),
+                    modifier = Modifier.padding(start = 12.dp)
+                )
+
+                noTelpRes?.let {
+                    Text(
+                        text = stringResource(id = it),
+                        fontSize = 13.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = colorResource(id = telpColorRes),
+                        modifier = Modifier.padding(start = 12.dp)
+                    )
+                }
+
+                Text(
+                    text = stringResource(id = alamatRes),
+                    fontSize = 14.sp,
+                    fontWeight = FontWeight.Medium,
+                    color = colorResource(id = alamatColorRes),
+                    modifier = Modifier.padding(start = 12.dp)
+                )
+            }
+
+            Image(
+                painter = painterResource(id = R.drawable.logo_umy),
+                contentDescription = stringResource(id = R.string.logo_desc),
+                modifier = Modifier.size(65.dp)
+            )
+        }
     }
 }
