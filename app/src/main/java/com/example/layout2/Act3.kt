@@ -98,3 +98,15 @@ fun UserCardWidget(
         }
     }
 }
+
+@Composable
+fun Act3Layout(modifier: Modifier = Modifier) {
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .padding(vertical = 12.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+
+    }
+}
