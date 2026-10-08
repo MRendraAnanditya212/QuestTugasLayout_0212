@@ -7,4 +7,8 @@
 
     <string name="nama_1">Muhammad Rendra Ananditya</string>
     <string name="alamat_1">Madrid, Spanyol</string>
+
+    <string name="nama_2">Shinta Rizky Nabila</string>
+    <string name="telp_2">083182389</string>
+    <string name="alamat_2">Bekasi</string>
 </resources>
